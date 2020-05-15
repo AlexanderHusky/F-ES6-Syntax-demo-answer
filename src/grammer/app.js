@@ -19,6 +19,8 @@
 // console.log(isConst)
 // console.log(isVar)
 
+
+
 /**
  * let 和 for 组合用法
  * */
@@ -43,19 +45,28 @@
 //   console.log(i);
 // }
 
+
+
 /**
  * 不存在变量提升
  * */
-// console.log(foo); // 输出undefined
+// console.log(foo); 
 // var foo = 2;
 
+
+
 // // let 的情况
-// console.log(bar); // 报错ReferenceError
+// console.log(bar); 
 // let bar = 2;
 
+
+
 // // const 的情况
-// console.log(baz); // 报错ReferenceError
+// console.log(baz); 
 // const baz = 2;
+
+
+
 
 /**
  * 不能重复声明
@@ -66,6 +77,9 @@
 // const a = 1
 // const a = 1
 // var a = 1
+
+
+
 
 /**
  * 常量声明与变量声明

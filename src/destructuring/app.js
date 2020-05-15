@@ -18,10 +18,14 @@ console.log("ES6+ destructuring");
 // let [x, , y] = [1, 2, 3];
 // debugger
 
+
+
 // 解构不成功的值
 // let [foo] = [];
 // let [bar, foo] = [1];
 // console.log(foo)
+
+
 
 // 不完全解构
 // let [x, y] = [1, 2, 3];
@@ -32,6 +36,8 @@ console.log("ES6+ destructuring");
 // console.log(b);
 // console.log(d);
 
+
+
 // 错误使用
 // let [foo] = 1;
 // let [foo] = false;
@@ -39,6 +45,8 @@ console.log("ES6+ destructuring");
 // let [foo] = undefined;
 // let [foo] = null;
 // let [foo] = {};
+
+
 
 /**
  * 数组的解构的默认值
@@ -51,12 +59,16 @@ console.log("ES6+ destructuring");
 // let [x, y = "b"] = ["a", undefined];
 // debugger;
 
+
+
 // 当一个数组成员严格等于undefined，默认值才会生效
 // let [x = 1] = [undefined];
 // debugger
 
 // let [y = 1] = [null];
 // debugger
+
+
 
 // 默认值可以为变量，但必须要先声明
 // let [x = 1, y = x] = [];
@@ -78,11 +90,15 @@ console.log("ES6+ destructuring");
 // let { baz } = { foo: "aaa", bar: "bbb" };
 // debugger;
 
+
+
 // 变量名和属性名不一致但解构赋值
 // let { foo: baz } = { foo: 'aaa', bar: 'bbb' };
 // let obj = { first: 'hello', last: 'world' };
 // let { first: f, last: l } = obj;
 // debugger
+
+
 
 // 嵌套关系的解构赋值
 // let obj = {
@@ -106,6 +122,8 @@ console.log("ES6+ destructuring");
 // let { loc, loc: { start }, loc: { start: { line }} } = node;
 // debugger
 
+
+
 // 报错
 // let {foo: {bar}} = {baz: 'baz'};
 
@@ -118,6 +136,8 @@ console.log("ES6+ destructuring");
 // var {x = 3} = {x: undefined};
 // var {x = 3} = {x: null};
 // debugger
+
+
 
 //注意点1: 不要使用已经声明的变量用于解构赋值
 // let x;
@@ -175,8 +195,12 @@ console.log("ES6+ destructuring");
 // push(a, 1, 2, 3)
 // console.log(a)
 
+
+
 // 收集参数后面不能再有参数
 // function f(a, ...b, c) {}
+
+
 
 // 数组的展开运算
 // function add(x, y) {
@@ -185,10 +209,14 @@ console.log("ES6+ destructuring");
 
 // const numbers = [4, 38];
 // console.log(add(...numbers))
+
+
 // 灵活使用
 // function f(v, w, x, y, z) { }
 // const args = [0, 1];
 // f(-1, ...args, 2, ...[3]);
+
+
 // 数组定义
 // console.log([1,...[1,2,3], 3 ,...[4]])
 // let x = 1;
@@ -202,10 +230,14 @@ console.log("ES6+ destructuring");
 // let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };
 // console.log(z)
 
+
+
 // 对象的展开运算: 拷贝可遍历属性
 // let z = { a: 3, b: 4 };
 // let n = { ...z };
 // debugger
+
+
 
 // 对象的展开运算: 对象合并
 // let a = {x:1}
@@ -223,8 +255,9 @@ console.log("ES6+ destructuring");
 // 交换变量的值
 // let x = 1;
 // let y = 2;
-
 // [x, y] = [y, x];
+
+
 // 从函数返回多个值
 // function example() {
 //   return [1, 2, 3];
@@ -238,11 +271,15 @@ console.log("ES6+ destructuring");
 // }
 // let { foo, bar } = example();
 
+
+
 // 函数参数的定义
 // function f([x, y, z]) {  }
 // f([1, 2, 3]);
 // function f({x, y, z}) {  }
 // f({z: 3, y: 2, x: 1});
+
+
 
 // 提取 JSON 数据
 // let jsonData = {
@@ -252,6 +289,8 @@ console.log("ES6+ destructuring");
 // };
 // let { id, status, data: number } = jsonData;
 // console.log(id, status, number);
+
+
 
 // 函数参数的默认值
 // function fn (url, {
@@ -266,6 +305,8 @@ console.log("ES6+ destructuring");
 //   // ... do stuff
 // };
 
+
+
 // 遍历 Map 结构
 // const map = new Map();
 // map.set('first', 'hello');
@@ -274,6 +315,8 @@ console.log("ES6+ destructuring");
 // for (let [key, value] of map) {
 //   console.log(key + " is " + value);
 // }
+
+
 
 // 输入模块的指定方法
 // const { dirname, basename } = require("path");
