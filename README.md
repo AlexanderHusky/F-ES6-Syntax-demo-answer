@@ -1,6 +1,6 @@
-# static-page-scaffold
+# ES6-Syntax-demo-answer
 
-Static page with dev server for GTB project
+ES6 Syntax demo with answer
 
 ## Install dependencies
 
