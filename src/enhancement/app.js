@@ -126,6 +126,6 @@ console.log("ES6+ type enhancement");
 
 // 对象
 // let obj =  {a: 1, b: 2, c: 3}
-// for (var key of Object.keys(obj)) {
+// for (let key of Object.keys(obj)) {
 //   console.log(key + ': ' + obj[key]);
 // }

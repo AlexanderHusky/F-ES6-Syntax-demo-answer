@@ -4,6 +4,34 @@ console.log("ES6+ scope");
  * 函数作用域与全局作用域
  * */
 
+// ppt的例子 运行中的作用域 来综合展示作用域
+
+// let a = 10
+// const b = 20
+// debugger
+
+// function fn() {
+//   let a = 100
+//   const b = 200
+//   debugger
+   
+//   function bar() {
+//     let a = 1000
+//     const b = 2000
+//     debugger
+
+//     if(a > 0) {
+//       let a = 10000
+//       const b = 20000
+//       debugger
+//     }
+//   }
+
+//   bar()
+// }
+
+// fn()
+
 // 运行中的作用域
 // let a = 10;
 // let b = 20
